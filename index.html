@@ -177,18 +177,20 @@
           </div>
         </div>
       </div>
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Your Name" required />
+      <form class="contact-form" id="contact-form">
+      <input type="hidden" name="access_key" value="1556686c-0ee4-4106-a73c-443990beb9ce" />
+      <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required />
+       </div>
+       <div class="form-group">
+       <input type="email" name="email" placeholder="Your Email" required />
         </div>
-        <div class="form-group">
-          <input type="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-      </form>
+       <div class="form-group">
+       <textarea name="message" placeholder="Your Message" required></textarea>
+       </div>
+      <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+       <p class="form-status"></p>
+        </form>
     </div>
   </section>
 
