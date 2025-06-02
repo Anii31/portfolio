@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniket Prakash | Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="particles" id="particles-js"></div>
+  
+  <header>
+    <div class="logo">PortFolio</div>
+    <nav>
+      <ul>
+        <li><a href="#hero" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#projects" title="Projects"><i class="fas fa-code"></i></a></li>
+        <li><a href="#skills" title="Skills"><i class="fas fa-cogs"></i></a></li>
+        <li><a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="fade-in">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Aniket Prakash</span></h1>
+        <h2><span class="typing"></span></h2>
+        <p>Computer Science Student | Web Developer </p>
+        <div class="social-icons">
+          <a href="https://github.com/Anii31" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aniket-prakash3115" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/it_s__anii" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/profile.jpg" alt="Aniket's Profile" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <div class="section-header">
+      <h2>Featured Project</h2>
+      <div class="underline"></div>
+    </div>
+    
+    <div class="project">
+      <div class="project-image">
+        <img src="assets/movierecommender.png" alt="Movie Recommender Screenshot" />
+        <div class="overlay">
+          <a href="https://github.com/Anii31/recommender" target="_blank" class="btn">View Code</a>
+          <a href="https://recommendersystem1.streamlit.app/" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-details">
+        <h3>Movie Recommender System</h3>
+        <p>An intelligent recommendation engine that suggests movies based on user preferences using collaborative filtering and content-based algorithms. Features include:</p>
+        <ul>
+          <li>Personalized recommendations based on viewing history</li>
+          <li>Genre-based filtering and popularity rankings</li>
+          <li>Modern React frontend with responsive design</li>
+          <li>Integration with TMDB API for movie database</li>
+        </ul>
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Firebase</span>
+          <span>Python</span>
+          <span>Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="skills" class="fade-in">
+  <div class="section-header">
+    <h2>My Skills</h2>
+    <div class="underline"></div>
+  </div>
+  
+  <div class="skills-row">
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <span>React</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skill-category">
+      <h3><i class="fas fa-server"></i> Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <span>Firebase</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <span>MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="fade-in">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <div class="underline"></div>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's talk about your project</h3>
+        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you as soon as possible!</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <span>aniket.prakash2020@gmail.com</span>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <span>+91 8677990112</span>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Patna, India</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">AP</div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Anii31" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aniket-prakash3115" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/it_s__anii" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Aniket Prakash. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
