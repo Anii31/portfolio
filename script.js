@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
   // Typing animation
   const roles = ["Web Developer", "React Specialist", "Problem Solver"];
@@ -150,13 +149,34 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Form submission
-const contactForm = document.querySelector(".contact-form");
+// Form submission using Web3Forms API
+const contactForm = document.querySelector("#contact-form");
+const statusMessage = document.querySelector(".form-status");
+
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to a server
-    alert("Thank you for your message! I'll get back to you soon.");
-    contactForm.reset();
+    statusMessage.textContent = "Sending...";
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        statusMessage.textContent = "Thank you! Your message has been sent.";
+        contactForm.reset();
+      } else {
+        statusMessage.textContent = "Oops! Something went wrong.";
+      }
+    } catch (error) {
+      statusMessage.textContent = "Error sending message. Please try again later.";
+    }
   });
 }
+
